@@ -1,0 +1,27 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin btn_border {
+    fill: $-color-light;
+    height: 3.5rem;
+    width: 5rem;
+    opacity: 0;
+    transition: all .4s;
+}
+
+@mixin btn_border--hover {
+    transition: all .4s;
+    opacity: 1;
+}

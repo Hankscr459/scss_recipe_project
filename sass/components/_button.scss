@@ -1,0 +1,61 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        border-radius: $br-s-size;
+        text-decoration: none;
+        display: inline-block;
+        border: none;
+        cursor: pointer;
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+    }
+
+    &--checkout {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: $s-size;
+        margin: $s-size 0rem;
+        width: 100%;
+        max-height: 4rem;
+        background-color: $-color-default;
+        color: $-color-light;
+        font-size: $font-s-size;
+        text-transform: uppercase;
+        box-shadow: 0 3px 5px rgba($-color-dark, .9);
+        background-image: linear-gradient(to left, 
+            $-color-default-dark-2 0%, 
+            $-color-default-dark-1 20%,
+            $-color-default-light-1 50%,
+            $-color-default-dark-1 80%, 
+            $-color-default-dark-2 100%
+        );
+
+        transition: all .4s;
+
+        &:hover {
+            background-image: linear-gradient(to left, 
+                $-color-default-dark-1 0%, 
+                $-color-default-light-1 20%,
+                $-color-default-light-2 50%,
+                $-color-default-light-1 80%, 
+                $-color-default-dark-1 100%
+            );
+
+            transition: all .4s;
+            .dropdown__cartMenu-border-r {
+                @include btn_border--hover;
+                margin-left: 1.3rem;
+            }
+
+            .dropdown__cartMenu-border-l {
+                @include btn_border--hover;
+                margin-right: 1.3rem;
+            }
+        }
+    }
+}

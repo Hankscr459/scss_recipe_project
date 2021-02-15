@@ -1,0 +1,194 @@
+.navigation {
+    background-color: $-color-light;
+    // max-height: 6rem;
+    position: fixed;
+    border-bottom: .2rem solid rgba( $-color-default, .9);
+    width: 100%;
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__button {
+        height: 5rem;
+        width: 5rem;
+        position: fixed;
+        top: .2rem;
+        right: .2rem;
+        z-index: 2000;
+        text-align: center;
+        cursor: pointer;
+        display: none;
+
+        @media only screen and (max-width: $bp-small) {
+            display: block;
+        }
+    }
+
+    &__icon {
+        position: relative;
+        margin-top: $m-size;
+
+        display: none;
+
+        @media only screen and (max-width: $bp-small) {
+            display: block;
+        }
+
+        &,
+        &::before,
+        &::after {
+            width: 3rem;
+            height: 2px;
+            background-color: $color-grey-dark-2;
+            
+
+            display: none;
+
+            @media only screen and (max-width: $bp-small) {
+                display: inline-block;
+            }
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            transition: all .2s;
+        }
+
+        &::before { top: -.8rem; }
+        &::after { top: .8rem; }
+    }
+
+    &__button:hover &__icon::before {
+        top: -1rem;
+    }
+
+    &__button:hover &__icon::after {
+        top: 1rem;
+    }
+
+    &__checkbox:checked + &__button &__icon {
+        background-color: transparent;
+    } 
+
+    &__checkbox:checked + &__button &__icon::before {
+        top: 0;
+        transform: rotate(135deg);
+    }
+
+    &__checkbox:checked + &__button &__icon::after {
+        top: 0;
+        transform: rotate(-135deg);
+    }
+
+
+    &__logo {
+        max-width: 8rem;
+        padding-bottom: $xs-size;
+        cursor: pointer;
+        color: $-color-default;
+        fill:  $-color-default;
+
+        @media only screen and (max-width: $bp-small) {
+            order: -1;
+        }
+    }
+
+    &__nav {
+        max-width: 100em;
+        margin:  0 auto;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        // min-height: 4rem;
+
+        & > * {
+            list-style: none;
+        }
+        
+        
+        
+        @media only screen and (max-width: $bp-small) {
+            flex-direction: column;
+            max-height: 100%;
+        }
+
+    }
+
+    &__link {
+        font-size: $font-xm-size;
+        font-weight: 300;
+        // padding: $s-size $m-size;
+        text-decoration: none;
+        color: $color-grey-light-2;
+
+        position: relative;
+
+        &-product {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        & span {
+            cursor: pointer;
+            padding: $s-size 0rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & svg {
+                opacity: 0;
+                transition: all .4s;
+            }
+
+            &:hover svg,
+            &:active svg
+            &:focus svg {
+                opacity: 1;
+                transition: all .4s;
+            }
+
+            @media only screen and (max-width: $bp-small) {
+                padding: 0rem;
+            }
+        }
+        
+        &:active,
+        &:focus {
+            background-color: none;
+            outline: none;
+        }
+
+        @media only screen and (max-width: 50.25em) {
+            font-size: $font-m-size;
+            // padding: $s-size;
+            // & span {
+            //     display: flex;
+            //     justify-content: center;
+            //     align-items: center;
+            // }
+        }
+
+        &--border {
+            width: 3rem;
+            height: 2.5rem;
+            fill: $-color-default;
+        }
+    }
+
+    &__item {
+        display: flex;
+        @media only screen and (max-width: $bp-small) {
+            display: none;
+            margin: $s-size;
+        }
+    }
+
+}

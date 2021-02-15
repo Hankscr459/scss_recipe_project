@@ -1,0 +1,159 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/svg" href="img/svg/logo.svg">
+        
+        <title>CSS_Playground</title>
+    </head>
+    <body id="outside">
+        <div class="navigation">
+            <nav class="navigation__nav">
+                <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+                <label for="navi-toggle" class="navigation__button">
+                    <span class="navigation__icon">&nbsp;</span>
+                </label>
+                <ul class="navigation__list">
+                    <li class="navigation__item" >
+                        <a class="navigation__link dropdown" id="dropdown">
+                                <span id="navi__item-toggle">
+                                    <svg class="navigation__link--border">
+                                        <use xlink:href="img/sprite.svg#border_link_left"></use>
+                                    </svg>
+                                    Product
+                                    <svg class="navigation__link--border">
+                                        <use xlink:href="img/sprite.svg#border_link_right"></use>
+                                    </svg>
+                                </span>
+                            <ul class="dropdown__menu" id="dropdown__menu">
+                                <li class="dropdown__menu-item">Cake</li>
+                                <li class="dropdown__menu-item">Bread</li>
+                                <li class="dropdown__menu-item">Cookie</li>
+                                <li class="dropdown__menu-item">Coffee</li>
+                                <img src="img/svg/border_1.svg" alt="" class="dropdown__border" />
+                            </ul>
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">
+                            <span>
+                                <svg class="navigation__link--border">
+                                    <use xlink:href="img/sprite.svg#border_link_left"></use>
+                                </svg>
+                                About us
+                                <svg class="navigation__link--border">
+                                    <use xlink:href="img/sprite.svg#border_link_right"></use>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>
+                    <img src="img/svg/logo.svg" alt="" class="navigation__logo" />
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">
+                            <span>
+                                <svg class="navigation__link--border">
+                                    <use xlink:href="img/sprite.svg#border_link_left"></use>
+                                </svg>
+                                Contact us
+                                <svg class="navigation__link--border">
+                                    <use xlink:href="img/sprite.svg#border_link_right"></use>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link dropdown" id="dropdown__cart">
+                            <span id="navi__cart-toggle">
+                                <svg class="navigation__link--border">
+                                    <use xlink:href="img/sprite.svg#border_link_left"></use>
+                                </svg>
+                                Cart
+                                <svg class="navigation__link--border">
+                                    <use xlink:href="img/sprite.svg#border_link_right"></use>
+                                </svg>
+                            </span>
+                            <div class="dropdown__cartMenu" id="dropdown__menuCart">
+                                <div class="dropdown__cartMenu-item p-o-click">
+                                    <img src="img/1387411411056.jpg" alt="" class="dropdown__cartMenu-img p-o-click">
+                                    <span class="dropdown__cartMenu-title p-o-click">Cookie 01</span>
+                                    <span class="dropdown__cartMenu-quality p-o-click">12 Qty X $20</span>
+                                    <i class="fas fa-trash dropdown__cartMenu-trash p-o-click"></i>
+                                </div>
+                                <div class="dropdown__cartMenu-item p-o-click">
+                                    <img src="img/Page-234-web-horizon.jpg" alt="" class="dropdown__cartMenu-img p-o-click">
+                                    <span class="dropdown__cartMenu-title p-o-click">Cookie 02</span>
+                                    <span class="dropdown__cartMenu-quality p-o-click">16 Qty X $30</span>
+                                    <i class="fas fa-trash dropdown__cartMenu-trash p-o-click"></i>
+                                </div>
+                                <div class="dropdown__cartMenu-item p-o-click">
+                                    <img src="img/The-Best-Chocolate-Chip-Cookies-photo-of-stacked-cookies-on-a-white-plate-with-a-glass-of-milk-in-the-background.jpg" alt="" class="dropdown__cartMenu-img p-o-click">
+                                    <span class="dropdown__cartMenu-title p-o-click">Cookie 03</span>
+                                    <span class="dropdown__cartMenu-quality p-o-click">6 Qty X $15</span>
+                                    <i class="fas fa-trash dropdown__cartMenu-trash p-o-click"></i>
+                                </div>
+                                <div class="dropdown__cartMenu-item p-o-click">
+                                    <img src="img/Page-234-web-horizon.jpg" alt="" class="dropdown__cartMenu-img p-o-click">
+                                    <span class="dropdown__cartMenu-title  p-o-click">Cookie 02</span>
+                                    <span class="dropdown__cartMenu-quality  p-o-click">16 Qty X $30</span>
+                                    <i class="fas fa-trash dropdown__cartMenu-trash p-o-click"></i>
+                                </div>
+                                <div class="dropdown__cartMenu-item p-o-click">
+                                    <img src="img/Page-234-web-horizon.jpg" alt="" class="dropdown__cartMenu-img p-o-click">
+                                    <span class="dropdown__cartMenu-title p-o-click">Cookie 02</span>
+                                    <span class="dropdown__cartMenu-quality p-o-click">16 Qty X $30</span>
+                                    <i class="fas fa-trash dropdown__cartMenu-trash p-o-click"></i>
+                                </div>
+                                <div class="dropdown__cartMenu-checkout p-o-click">
+                                    <h4 class="dropdown__cartMenu-totalPrice p-o-click">Total price: $777</h4>
+                                    <button class="btn btn--checkout p-o-click">
+                                        <svg class="dropdown__cartMenu-border-l p-o-click">
+                                            <use xlink:href="img/sprite.svg#border_btn_left" class="p-o-click"></use>
+                                        </svg>
+                                        <span class="p-o-click">Go to checkout</span>
+                                        <svg class="dropdown__cartMenu-border-r p-o-click">
+                                            <use xlink:href="img/sprite.svg#border_btn_right" class="p-o-click"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+                
+            </nav>
+        </div>
+        
+    <svg class="header__svg" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        viewBox="0 0 706.9 309.5" style="enable-background:new 0 0 706.9 309.5;" xml:space="preserve">
+        <defs>
+            <pattern id="imgpattern" x="0" y="0" width="1" height="1"
+                        viewBox="0 0 1024 576" preserveAspectRatio="xMidYMid slice">
+                <image x="-280" y="-50" width="1500" height="800" xlink:href="../img/header.jpg"/>
+            </pattern>
+        </defs>
+        <g id="XMLID_1_">
+            <g>
+                <path fill="url(#imgpattern)" d="M706.8,16l0,156.3c-126.4-15.2-211.8,9.2-267,35c-57.4,26.9-67.1,48.2-138,73C274,290,197.2,314,96.2,308.8
+                    c-36.1-1.9-68.4-7.1-96.2-13.6c0,0,0-4.1,0-10.9c0-37.9,0-161.4,0-161.4c74.7,28.1,134.7,28.4,171.6,25
+                    c71.2-6.6,127.8-33.7,204.6-70.5c75.1-36,78.8-47.4,120.5-61.4C575.8-10.6,651.9,0.6,706.8,16z"/>
+            </g>
+            <g>
+                <path fill="url(#imgpattern)" class="header__svg-st0" d="M0,284.2c0,6.9,0,10.9,0,10.9c27.8,6.5,60.1,11.8,96.2,13.6c101,5.2,177.8-18.8,205.6-28.5
+                    c70.9-24.8,80.6-46.1,138-73c55.2-25.8,140.6-50.2,267-35l0-156.3c-54.9-15.3-131-26.6-210.2,0c-41.6,14-45.4,25.4-120.5,61.4
+                    c-76.8,36.8-133.4,63.9-204.6,70.5c-36.9,3.4-96.9,3.1-171.6-25C0,122.8,0,246.3,0,284.2z"/>
+            </g>
+        </g>
+    </svg>
+
+    </body>
+    <script src="./js/nav.js"></script>
+</html>
