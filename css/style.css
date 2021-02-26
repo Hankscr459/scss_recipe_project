@@ -44,7 +44,7 @@ body {
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 59em) {
     .u-margin-bottom-medium {
       margin-bottom: 3rem  !important; } }
 
@@ -53,7 +53,7 @@ body {
 
 .u-margin-bottom-big {
   margin-bottom: 8rem !important; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 59em) {
     .u-margin-bottom-big {
       margin-bottom: 5rem  !important; } }
 
@@ -112,7 +112,7 @@ body {
     cursor: pointer; }
     .dropdown__menu-item:not(:nth-last-child(2)) {
       border-bottom: 0.2rem solid #963711; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 42em) {
     .dropdown__menu {
       display: none;
       position: static;
@@ -139,7 +139,7 @@ body {
   @media only screen and (max-width: 50.25em) {
     .dropdown__cartMenu {
       right: 0rem; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 42em) {
     .dropdown__cartMenu {
       display: none;
       position: static;
@@ -254,14 +254,14 @@ body {
     text-align: center;
     cursor: pointer;
     display: none; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 42em) {
       .navigation__button {
         display: block; } }
   .navigation__icon {
     position: relative;
     margin-top: 2rem;
     display: none; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 42em) {
       .navigation__icon {
         display: block; } }
     .navigation__icon, .navigation__icon::before, .navigation__icon::after {
@@ -269,7 +269,7 @@ body {
       height: 2px;
       background-color: #333;
       display: none; }
-      @media only screen and (max-width: 37.5em) {
+      @media only screen and (max-width: 42em) {
         .navigation__icon, .navigation__icon::before, .navigation__icon::after {
           display: inline-block; } }
     .navigation__icon::before, .navigation__icon::after {
@@ -299,11 +299,11 @@ body {
     cursor: pointer;
     color: #963711;
     fill: #963711; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 42em) {
       .navigation__logo {
         order: -1; } }
   .navigation__nav {
-    max-width: 100em;
+    max-width: 120em;
     margin: 0 auto; }
   .navigation__list {
     display: flex;
@@ -311,16 +311,19 @@ body {
     align-items: center; }
     .navigation__list > * {
       list-style: none; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 42em) {
       .navigation__list {
         flex-direction: column;
         max-height: 100%; } }
   .navigation__link {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 300;
     text-decoration: none;
     color: #777;
     position: relative; }
+    @media only screen and (max-width: 59em) {
+      .navigation__link {
+        font-size: 2rem; } }
     .navigation__link-product {
       display: flex;
       align-items: center;
@@ -334,27 +337,33 @@ body {
       .navigation__link span svg {
         opacity: 0;
         transition: all .4s; }
-      .navigation__link span:hover svg,
-      .navigation__link span:active svg
-.navigation__link span:focus svg {
+      .navigation__link span:active svg,
+      .navigation__link span:focus svg {
         opacity: 1;
         transition: all .4s; }
-      @media only screen and (max-width: 37.5em) {
+      @media only screen and (max-width: 42em) {
         .navigation__link span {
           padding: 0rem; } }
     .navigation__link:active, .navigation__link:focus {
       background-color: none;
       outline: none; }
+    .navigation__link:hover .navigation__link--border {
+      opacity: 1;
+      transition: all .4s; }
     @media only screen and (max-width: 50.25em) {
       .navigation__link {
         font-size: 1.5rem; } }
     .navigation__link--border {
-      width: 3rem;
+      width: 4rem;
+      margin: 0rem .5rem;
       height: 2.5rem;
       fill: #963711; }
+      @media only screen and (max-width: 42em) {
+        .navigation__link--border {
+          margin: 0rem 3rem; } }
   .navigation__item {
     display: flex; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 42em) {
       .navigation__item {
         display: none;
         margin: 1rem; } }

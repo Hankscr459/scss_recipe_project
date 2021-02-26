@@ -7,11 +7,12 @@ const dropdown__cart = document.getElementById('dropdown__cart')
 
 
 
-window.addEventListener('click', function(event){
+window.addEventListener('mouseover', function(event){
     
     if (!event.target.matches("#navi__item-toggle") 
         && event.target.parentNode != dropdown
-        && event.target.parentNode != menu) 
+        && event.target.parentNode != menu 
+        && !event.target.matches(".p-o-click"))
     {
         if(menu.classList.contains("dropdown__menu--active")) {
             menu.classList.remove("dropdown__menu--active")
@@ -19,17 +20,17 @@ window.addEventListener('click', function(event){
     }
 })
 
-document.getElementById('navi__item-toggle').addEventListener('click', NavItem)
+document.getElementById('navi__item-toggle').addEventListener('mouseover', NavItem)
 
 function NavItem() {
-    menu.classList.toggle('dropdown__menu--active')
+    // menu.classList.toggle('dropdown__menu--active')
+    menu.classList.add("dropdown__menu--active")
 }
 
 
+const navi__cartBorder = document.getElementById('navi__cartBorder')
 
-
-
-window.addEventListener('click', function(event){
+window.addEventListener('mouseover', function(event){
     // event.preventDefault()
     if (!event.target.matches("#navi__cart-toggle") 
         && event.target.parentNode != dropdown__cart
@@ -43,10 +44,12 @@ window.addEventListener('click', function(event){
     }
 })
 
-document.getElementById('navi__cart-toggle').addEventListener('click', NavCart)
+document.getElementById('navi__cart-toggle').addEventListener('mouseover', NavCart)
 
 function NavCart() {
-    menuCart.classList.toggle('dropdown__menuCart--active')
+    // menuCart.classList.toggle('dropdown__menuCart--active')
+    menuCart.classList.add("dropdown__menuCart--active")
+
 }
 
 document.getElementById('navi-toggle').addEventListener('click', showNav)
