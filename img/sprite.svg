@@ -232,5 +232,11 @@
 </g>
 </symbol>
 
+<symbol id="feature__title" viewBox="0 0 263.4 56.8">
+	<text transform="matrix(1 0 0 1 0 24.8184)" class="st0 st1">Cookie</text>
+	<text transform="matrix(1 0 0 1 122.7274 39.5908)" class="st2 st1">&amp;</text>
+	<text transform="matrix(1 0 0 1 146.5911 54.3634)" class="st0 st1">Bread</text>
+</symbol>
+
 </defs>
 </svg>

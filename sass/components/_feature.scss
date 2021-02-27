@@ -5,20 +5,26 @@
     align-self: end;
     font-size: $font-l-size;
     padding: 5rem;
-    margin-bottom: -10rem;
+    margin-bottom: -18rem;
 
     @media only screen and (max-width: $bp-largest) {
         margin-bottom: 0rem;
-        align-self: center;
+        align-self: start;
         justify-self: center;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        padding: 1rem;
+        margin-top: 6rem;
     }
 
     &__title{
 
         &--1 {
            margin-left: 6rem;
-        //    margin-bottom: -4rem;
-           letter-spacing: 1rem;
+           @media only screen and (max-width: $bp-large) {
+            margin-left: 0;
+        }
         }
 
         &--2 {

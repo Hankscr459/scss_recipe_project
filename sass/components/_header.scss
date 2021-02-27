@@ -2,6 +2,7 @@
 
     grid-column: 1 / -1;
     grid-row: 1 / span 2;
+    overflow: hidden;
 
     &__svg {
         margin-top: 8rem;
