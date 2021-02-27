@@ -1,0 +1,9 @@
+.story {
+    grid-column: 1 / -1;
+    grid-row: story-start / story-end;
+    overflow: hidden;
+    align-self: end;
+    // margin-top: 2rem;
+    // background-color: teal;
+    
+}
