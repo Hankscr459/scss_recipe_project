@@ -1,0 +1,12 @@
+.home {
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr [feature-start] 1fr 1fr [feature-end] ;
+        grid-template-rows: [feature-start] minmax(40rem, 90rem) [feature-end] minmax(35rem, 50rem) minmax(50rem, 85vh);
+
+        @media only screen and (max-width: $bp-largest) {
+            grid-template-columns: 1fr [feature-start] 1fr 1fr 1fr 1fr [feature-end] 1fr;
+            grid-template-rows: minmax(40rem, 90rem) [feature-start] minmax(35rem, 20rem) [feature-end] minmax(50rem, 85vh);
+        }
+    }
+}

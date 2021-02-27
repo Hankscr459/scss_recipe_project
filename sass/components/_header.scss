@@ -1,9 +1,15 @@
-.header__svg {
-    margin-top: 8rem;
+.header {
 
-    &-st0 {
-        fill:none;
-        stroke:black;
-        stroke-miterlimit:10;
+    grid-column: 1 / -1;
+    grid-row: 1 / span 2;
+
+    &__svg {
+        margin-top: 8rem;
+    
+        &-st0 {
+            fill:none;
+            stroke:black;
+            stroke-miterlimit:10;
+        }
     }
 }
