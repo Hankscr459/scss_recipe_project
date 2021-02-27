@@ -127,6 +127,7 @@
         // padding: $s-size $m-size;
         text-decoration: none;
         color: $color-grey-light-2;
+        backface-visibility: hidden;
 
         position: relative;
 
@@ -170,6 +171,9 @@
         }
 
         &:hover .navigation__link--border {
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            transform: translateZ(0);
             opacity: 1;
             transition: all .4s;
         }

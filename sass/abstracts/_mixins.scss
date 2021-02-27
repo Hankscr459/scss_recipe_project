@@ -19,9 +19,15 @@
     width: 5rem;
     opacity: 0;
     transition: all .4s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0);
 }
 
 @mixin btn_border--hover {
     transition: all .4s;
     opacity: 1;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0);
 }
