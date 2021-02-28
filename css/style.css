@@ -283,9 +283,9 @@ body {
   .feature__paragraph {
     margin-top: 3rem; }
 
-.story {
+.showcase {
   grid-column: 1 / -1;
-  grid-row: story-start / story-end;
+  grid-row: showcase-start / showcase-end;
   overflow: hidden;
   align-self: end; }
 
@@ -293,6 +293,13 @@ body {
   width: 100%;
   object-fit: cover;
   overflow: hidden; }
+
+.gallery {
+  grid-column: 1 / -1;
+  grid-row: gallery-start / gallery-end;
+  align-self: center;
+  margin-top: 3rem;
+  background-color: teal; }
 
 .navigation {
   background-color: #fff;
@@ -432,18 +439,18 @@ body {
 .home__container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr [feature-start] 1fr 1fr [feature-end];
-  grid-template-rows: [feature-start] minmax(40rem, 110rem) [feature-end story-start] minmax(min-content, 30rem) [story-end]; }
+  grid-template-rows: [feature-start] minmax(40rem, 110rem) [feature-end showcase-start] minmax(min-content, 30rem) [showcase-end gallery-start] minmax(min-content, 40rem) [gallery-end]; }
   @media only screen and (max-width: 100em) {
     .home__container {
       grid-template-columns: 1fr [feature-start] 1fr 1fr 1fr 1fr [feature-end] 1fr;
-      grid-template-rows: minmax(40rem, 72rem) [feature-start] 45rem [feature-end story-start] minmax(min-content, 30rem) [story-end]; } }
+      grid-template-rows: minmax(40rem, 72rem) [feature-start] 45rem [feature-end showcase-start] minmax(min-content, 30rem) [showcase-end gallery-start] minmax(min-content, 40rem) [gallery-end]; } }
   @media only screen and (max-width: 77em) {
     .home__container {
-      grid-template-rows: minmax(40rem, 55rem) [feature-start] 45rem [feature-end story-start] minmax(min-content, 30rem) [story-end]; } }
+      grid-template-rows: minmax(40rem, 55rem) [feature-start] 45rem [feature-end showcase-start] minmax(min-content, 30rem) [showcase-end gallery-start] minmax(min-content, 40rem) [gallery-end]; } }
   @media only screen and (max-width: 42em) {
     .home__container {
       grid-template-columns: [feature-start] 1fr 1fr 1fr 1fr 1fr 1fr [feature-end];
-      grid-template-rows: 30rem [feature-start] 45rem [feature-end story-start] minmax(min-content, 30rem) [story-end]; } }
+      grid-template-rows: 30rem [feature-start] 45rem [feature-end showcase-start] minmax(min-content, 30rem) [showcase-end gallery-start] minmax(min-content, 40rem) [gallery-end]; } }
   @media only screen and (max-width: 31.25em) {
     .home__container {
-      grid-template-rows: 25rem [feature-start] 45rem [feature-end story-start] minmax(min-content, 30rem) [story-end]; } }
+      grid-template-rows: 25rem [feature-start] 45rem [feature-end showcase-start] minmax(min-content, 30rem) [showcase-end gallery-start] minmax(min-content, 40rem) [gallery-end]; } }
