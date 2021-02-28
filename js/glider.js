@@ -4,6 +4,10 @@ new Glider(document.querySelector(".glider"), {
     slidesToScroll: 1,
     draggable: true,
     dots: ".dots",
+    arrows: {
+      prev: ".glider-prev",
+      next: ".glider-next"
+    },
     responsive: [
       {
         // If Screen Size More than 768px

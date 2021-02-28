@@ -329,6 +329,7 @@ body {
     outline: none;
     border-radius: 2px;
     width: 100%;
+    height: 100%;
     object-fit: cover; }
 
 .card-image {
@@ -360,11 +361,16 @@ body {
   margin-top: 1rem;
   width: 5rem;
   height: 5rem;
-  font-size: 5rem !important;
+  font-size: 4rem !important;
   line-height: 3rem;
   border-radius: 50%;
   margin-left: 3rem;
   top: 35%; }
+  @media only screen and (max-width: 42em) {
+    .glider-prev {
+      width: 3rem;
+      height: 3rem;
+      font-size: 2rem !important; } }
 
 .glider-next {
   background: #222 !important;
@@ -372,17 +378,30 @@ body {
   margin-top: 1rem;
   width: 5rem;
   height: 5rem;
-  font-size: 5rem !important;
+  font-size: 4rem !important;
   line-height: 3rem;
   border-radius: 50%;
   margin-right: 3rem !important;
   top: 35%; }
+  @media only screen and (max-width: 42em) {
+    .glider-next {
+      width: 3rem;
+      height: 3rem;
+      font-size: 2em !important; } }
 
 .glider-prev .fas {
-  margin-left: 0rem; }
+  margin-left: .5rem !important;
+  margin-top: .5rem !important; }
+  @media only screen and (max-width: 42em) {
+    .glider-prev .fas {
+      margin-left: .5rem !important; } }
 
 .glider-next .fas {
-  margin-left: 1rem; }
+  margin-left: 1.5rem !important;
+  margin-top: .5rem !important; }
+  @media only screen and (max-width: 42em) {
+    .glider-next .fas {
+      margin-left: 1rem !important; } }
 
 .navigation {
   background-color: #fff;
