@@ -1,35 +1,69 @@
-.main .container .glider-contain .glider .card-image {
-    margin-right: 1.5rem;
+.card-image {
+    &:not(:last-child) {
+        margin-right: 2.5rem;
+    }
     background: #ffffff;
     border: none;
     outline: none;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     border-radius: 2px;
+    width: 100%;
   }
-  .main .container .glider-contain .glider .card-image img {
+.glider .card-image img {
     display: block;
     position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
-    height: auto;
+    max-height: 30rem;
+    // height: auto;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
-  .main .container .glider-contain .glider-prev,
-  .main .container .glider-contain .glider-next {
-    font-size: 1.5rem;
-    background: #454545;
+
+  .card-image {
+    //   margin-left: 3rem;
+      :first-child {
+          margin-left: 0 !important;
+      }
+  }
+
+
+.glider-prev {
+    // font-size: 1.5rem;
+    background: #222 !important;
     color: #ffffff;
     margin-top: 1rem;
-    width: 3rem;
-    height: 3rem;
+    width: 5rem;
+    height: 5rem;
+    font-size: 5rem !important;
     line-height: 3rem;
     border-radius: 50%;
-    margin-left: 3rem !important;
+    margin-left: 3rem;
+    top: 35%;
   }
-  .main .container .glider-contain .glider-prev .fas,
-  .main .container .glider-contain .glider-next .fas {
+
+.glider-next {
+    background: #222 !important;
+    color: #ffffff;
+    margin-top: 1rem;
+    width: 5rem;
+    height: 5rem;
+    font-size: 5rem !important;
+    line-height: 3rem;
+    border-radius: 50%;
+    margin-right: 3rem !important;
+    top: 35%;
+}
+
+// .gallery__next {
+//     margin-right: 6rem !important;
+// }
+
+.glider-prev .fas {
+    margin-left: 0rem;
+}
+
+.glider-next .fas {
     margin-left: 1rem;
-  }
-  
+}

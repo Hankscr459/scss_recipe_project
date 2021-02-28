@@ -4,6 +4,7 @@
     position: fixed;
     border-bottom: .2rem solid rgba( $-color-default, .9);
     width: 100%;
+    z-index: 999;
 
     &__checkbox {
         display: none;

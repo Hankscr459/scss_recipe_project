@@ -4,5 +4,14 @@
     align-self: center;
     margin-top: 3rem;
 
-    background-color: teal;
+
+    &__contain {
+        position: relative;
+        background: #ffffff;
+        border: none;
+        outline: none;
+        border-radius: 2px;
+        width: 100%;
+        object-fit: cover;
+    }
 }
