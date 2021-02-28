@@ -4,5 +4,18 @@
         width: 100%;
         object-fit: cover;
         overflow: hidden;
+        max-height: 70rem;
+    }
+
+    @media only screen and (max-width: $bp-largest) {
+        max-height: 60rem;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        max-height: 50rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        max-height: 40rem;
     }
 }

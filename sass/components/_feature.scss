@@ -7,6 +7,12 @@
     padding: 5rem;
     // margin-bottom: -5rem;
 
+    -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+        word-wrap: break-word;
+
     @media only screen and (max-width: $bp-largest) {
         margin-bottom: 0rem;
         align-self: start;
@@ -41,5 +47,10 @@
 
     &__paragraph {
         margin-top: 3rem;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+        word-wrap: break-word;
     }
 }

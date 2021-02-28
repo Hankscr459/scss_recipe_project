@@ -2,24 +2,24 @@
     &__container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr [feature-start] 1fr 1fr [feature-end] ;
-        grid-template-rows: [feature-start] minmax(40rem, 110rem) [feature-end showcase-start]  minmax(min-content, 30rem) [showcase-end gallery-start] minmax(min-content, 40rem) [gallery-end];
+        grid-template-rows: [feature-start] minmax(40rem, 110rem) [feature-end showcase-start]  minmax(min-content, 70rem) [showcase-end gallery-start] minmax(min-content, 40rem) [gallery-end];
 
         @media only screen and (max-width: $bp-largest) {
             grid-template-columns: 1fr [feature-start] 1fr 1fr 1fr 1fr [feature-end] 1fr;
-            grid-template-rows: minmax(40rem, 72rem) [feature-start] 45rem [feature-end showcase-start]  minmax(min-content, 30rem) [showcase-end gallery-start] minmax(min-content, 40rem) [gallery-end];
+            grid-template-rows: minmax(40rem, 72rem) [feature-start] 45rem [feature-end showcase-start]  minmax(min-content, 60rem) [showcase-end gallery-start] minmax(min-content, 40rem) [gallery-end];
         }
 
         @media only screen and (max-width: $bp-large) {
-            grid-template-rows: minmax(40rem, 55rem) [feature-start] 45rem [feature-end showcase-start]  minmax(min-content, 30rem) [showcase-end gallery-start] minmax(min-content, 40rem) [gallery-end];
+            grid-template-rows: minmax(40rem, 55rem) [feature-start] 45rem [feature-end showcase-start]  minmax(min-content, 50rem) [showcase-end gallery-start] minmax(min-content, 40rem) [gallery-end];
         }
 
         @media only screen and (max-width: $bp-small) {
             grid-template-columns: [feature-start] 1fr 1fr 1fr 1fr 1fr 1fr [feature-end];
-            grid-template-rows: 30rem [feature-start] 45rem [feature-end showcase-start] minmax(min-content, 30rem) [showcase-end gallery-start] minmax(min-content, 40rem) [gallery-end];
+            grid-template-rows: 30rem [feature-start] 45rem [feature-end showcase-start] minmax(min-content, 40rem) [showcase-end gallery-start] minmax(min-content, 30rem) [gallery-end];
         }
 
         @media only screen and (max-width: $bp-smallest) {
-            grid-template-rows: 25rem [feature-start] 45rem [feature-end showcase-start]  minmax(min-content, 30rem) [showcase-end gallery-start] minmax(min-content, 40rem) [gallery-end];
+            grid-template-rows: 25rem [feature-start] 45rem [feature-end showcase-start]  minmax(min-content, 25rem) [showcase-end gallery-start] minmax(min-content, 30rem) [gallery-end];
         }
     }
 }
