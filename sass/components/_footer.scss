@@ -37,9 +37,10 @@
         align-self: center;
         justify-self: center;
 
-        background-color: rgba( $-color-light, .6);
+        // background-color: rgba( $-color-light, .6);
         width: 100%;
-        height: .2rem;
+        // height: 3rem;
+        fill: white;
     }
 
     &__border--bottom {
