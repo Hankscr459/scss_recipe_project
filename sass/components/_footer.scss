@@ -16,7 +16,7 @@
 
     @media only screen and (max-width: $bp-small) {
         grid-template-columns: 1rem [wigdet-start category-start post-start logo-start] 3fr [wigdet-end category-end post-end logo-end] 1rem;
-        grid-template-rows: 3rem [wigdet-start] 25rem [wigdet-end category-start] 25rem [category-end post-start] 1fr [post-end logo-start] 6rem [logo-end] 3rem
+        grid-template-rows: 5rem [wigdet-start] 25rem [wigdet-end category-start] 25rem [category-end post-start] 1fr [post-end logo-start] 6rem [logo-end] 5rem
     }
 
     &__logo {
@@ -49,9 +49,10 @@
         align-self: center;
         justify-self: center;
 
-        background-color: rgba( $-color-light, .6);
+        // background-color: rgba( $-color-light, .6);
         width: 100%;
-        height: .2rem;
+        // height: .2rem;
+        fill: white;
     }
 
     &__wigdet {

@@ -420,7 +420,7 @@ body {
   @media only screen and (max-width: 42em) {
     .footer {
       grid-template-columns: 1rem [wigdet-start category-start post-start logo-start] 3fr [wigdet-end category-end post-end logo-end] 1rem;
-      grid-template-rows: 3rem [wigdet-start] 25rem [wigdet-end category-start] 25rem [category-end post-start] 1fr [post-end logo-start] 6rem [logo-end] 3rem; } }
+      grid-template-rows: 5rem [wigdet-start] 25rem [wigdet-end category-start] 25rem [category-end post-start] 1fr [post-end logo-start] 6rem [logo-end] 5rem; } }
   .footer__logo {
     grid-column: logo-start / logo-end;
     grid-row: logo-start /logo-end;
@@ -441,9 +441,8 @@ body {
     grid-row: -2 /span 1;
     align-self: center;
     justify-self: center;
-    background-color: rgba(255, 255, 255, 0.6);
     width: 100%;
-    height: .2rem; }
+    fill: white; }
   .footer__wigdet {
     grid-column: wigdet-start / wigdet-end;
     grid-row: wigdet-start /wigdet-end;
